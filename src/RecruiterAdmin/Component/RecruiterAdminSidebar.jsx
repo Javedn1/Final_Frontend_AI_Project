@@ -115,7 +115,7 @@ const RecruiterAdminSidebar = ({ isOpen, onToggle }) => {
                   ${activeNav === 'NonCandidateList' ? 'bg-white text-black' : 'hover:bg-white hover:text-black'}`}
               >
                 <Building2 size={20} />
-                <span>Candidate Dashboard</span>
+                <span>Candidate Database</span>
               </button>
             </li>
 
