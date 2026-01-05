@@ -347,14 +347,14 @@ const LandingPage = () => {
               <p className='my-10 text-xl'>
                 Our AI recruiter finds, screens, and engages top talent 24/7—so you can focus on growing your business, not chasing resumes
               </p>
-              <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+              {/* <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <button className="border border-[#6D28D9] bg-[#6D28D9] transition duration-300 text-white px-8 py-3 rounded-3xl font-semibold shadow-xl hover:scale-105 transform">
                   Get Started
                 </button>
                 <button className="border-2 border-[#6D28D9] text-[#6D28D9] transition duration-300 px-8 py-2 rounded-3xl font-semibold shadow-sm hover:scale-105 transform">
                   Book a Demo
                 </button>
-              </div>
+              </div> */}
             </div>
 
             <div className="flex justify-center items-center">
