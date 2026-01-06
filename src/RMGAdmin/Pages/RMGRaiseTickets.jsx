@@ -179,10 +179,10 @@ const RMGRaiseTickets = () => {
                                     />
                                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                                 </div>
-                                <button className="flex items-center justify-center gap-2 px-4 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                                {/* <button className="flex items-center justify-center gap-2 px-4 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
                                     <SlidersHorizontal className="w-5 h-5" />
                                     <span>Filters</span>
-                                </button>
+                                </button> */}
                             </div>
                         </div>
 

@@ -84,7 +84,7 @@ const RecruiterAdminSidebar = ({ isOpen, onToggle }) => {
                 <UserPlus size={20} />
                 <span>All JDs</span>
               </button>
-            </li>
+            </li> 
 
             <li>
               <button
@@ -109,14 +109,14 @@ const RecruiterAdminSidebar = ({ isOpen, onToggle }) => {
             </li>
 
             <li>
-              <button
+              {/* <button
                 onClick={() => handleNavClick('NonCandidateList', '/RecruiterAdmin-Dashboard/NonCandidateList')}
                 className={`flex w-full items-center space-x-3 py-2 px-7 rounded transition-colors 
                   ${activeNav === 'NonCandidateList' ? 'bg-white text-black' : 'hover:bg-white hover:text-black'}`}
               >
                 <Building2 size={20} />
                 <span>Candidate Database</span>
-              </button>
+              </button> */}
             </li>
 
             <li>

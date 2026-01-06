@@ -299,10 +299,10 @@ function RMGManagement() {
                   >
                     {showAddForm ? 'Hide Form' : 'Add New'}
                   </button>
-                  <button className="flex gap-1 px-6 py-2.5 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-medium">
+                  {/* <button className="flex gap-1 px-6 py-2.5 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-medium">
                     <SlidersVertical />
                     Filter
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -316,7 +316,7 @@ function RMGManagement() {
                       <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 whitespace-nowrap">Email</th>
                       <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 whitespace-nowrap">Phone</th>
                       <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 whitespace-nowrap">Status</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 whitespace-nowrap">Total Recruiter Managed</th>
+                      {/* <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 whitespace-nowrap">Total Recruiter Managed</th> */}
                       <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900 whitespace-nowrap">Action</th>
                     </tr>
                   </thead>
@@ -334,7 +334,7 @@ function RMGManagement() {
                               {recruiter.status}
                             </span>
                           </td>
-                          <td className="px-6 py-4 text-sm text-gray-900 whitespace-nowrap">{recruiter.totalRecruiterManaged}</td>
+                          {/* <td className="px-6 py-4 text-sm text-gray-900 whitespace-nowrap">{recruiter.totalRecruiterManaged}</td> */}
                           <td className="px-6 py-4 whitespace-nowrap">
                             <div className="flex gap-2">
                               <button
@@ -390,7 +390,7 @@ function RMGManagement() {
 
               <div className="mt-4 text-sm text-gray-700 space-y-1">
                 <p>
-                  <span className="font-medium text-gray-800">ID :</span> {selectedRecruiter.registerId}
+                  <span className="font-medium text-gray-800">ID :</span> {selectedRecruiter.id}
                 </p>
                 <p>
                   <span className="font-medium text-gray-800">Register Date :</span> {selectedRecruiter.registerDate}
@@ -418,7 +418,7 @@ function RMGManagement() {
 
               <hr className="my-4 border-gray-300" />
 
-              <div>
+              {/* <div>
                 <h3 className="font-medium text-gray-800 mb-2">Performance</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
@@ -438,36 +438,36 @@ function RMGManagement() {
                     <span className="text-gray-900 font-medium">{selectedRecruiter.successRate}%</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col gap-2 mt-6">
                 <div className="flex gap-2">
-                  <button 
+                  {/* <button 
                     onClick={() => handleSuspend(selectedRecruiter)}
                     className="border border-red-500 text-red-500 px-4 py-2 rounded-md font-medium hover:bg-red-50 transition flex-1"
                   >
                     Suspend
-                  </button>
-                  <button 
+                  </button> */}
+                  {/* <button 
                     onClick={() => handleToggleStatus(selectedRecruiter)}
                     className={`border ${selectedRecruiter.status === 'Active' ? 'border-gray-300 text-gray-700 bg-gray-50 hover:bg-gray-100' : 'border-green-500 text-green-500 hover:bg-green-50'} px-4 py-2 rounded-md font-medium transition flex-1`}
                   >
                     {selectedRecruiter.status === 'Active' ? 'Activate' : 'Activate'}
-                  </button>
+                  </button> */}
                 </div>
                 <div className="flex gap-2">
-                  <button 
+                  {/* <button 
                     onClick={() => handleEditRMG(selectedRecruiter)}
                     className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition flex-1"
                   >
                     Edit RMG
-                  </button>
-                  <button 
+                  </button> */}
+                  {/* <button 
                     onClick={() => handleToggleStatus(selectedRecruiter)}
                     className={`border ${selectedRecruiter.status === 'Active' ? 'border-red-500 text-red-500' : 'border-green-500 text-green-500'} px-4 py-2 rounded-md font-medium hover:bg-opacity-10 transition flex-1`}
                   >
                     {selectedRecruiter.status === 'Active' ? 'Deactivate' : 'Activate'}
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

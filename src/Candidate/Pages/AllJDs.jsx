@@ -233,7 +233,7 @@ const AllJDs = () => {
                     <h1 className="text-2xl sm:text-3xl text-gray-900">Candidate</h1>
 
                     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
-                        <div className="relative flex-1 sm:flex-initial">
+                        {/* <div className="relative flex-1 sm:flex-initial">
                             <input
                                 type="text"
                                 placeholder="Search by Candidate Name"
@@ -247,7 +247,7 @@ const AllJDs = () => {
                         <button className="flex items-center justify-center gap-2 px-4 py-2.5 bg-black text-white rounded-lg transition-colors hover:bg-gray-800">
                             <SlidersHorizontal className="w-5 h-5" />
                             <span className="font-medium">Filter</span>
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </header>

@@ -130,7 +130,7 @@ const UniversalLogin = () => {
                                 <label className="block text-gray-800 font-medium mb-1">
                                     Email ID
                                 </label>
-                                <input
+                                <input 
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -138,7 +138,7 @@ const UniversalLogin = () => {
                                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     required
                                 />
-                            </div>
+                            </div> 
  
                             <div className="mb-6 relative">
                                 <label className="block text-gray-800 font-medium mb-1">
@@ -183,7 +183,7 @@ const UniversalLogin = () => {
                             </div> */}
  
                             <div className="flex justify-center">
-                                <button
+                                <button 
                                     type="submit"
                                     disabled={loading}
                                     className="w-full bg-blue-500 text-white py-2 rounded-md font-medium hover:bg-blue-600 transition-colors disabled:bg-blue-300 disabled:cursor-not-allowed"

@@ -126,10 +126,10 @@ export default function AssignedRecruiters() {
                         <button onClick={()=>navigate("/RMGAdmin-Dashboard/RequirementForm")} className="px-6 py-2.5 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors">
                             Create
                         </button>
-                        <button className="px-6 py-2.5 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors flex items-center gap-2">
+                        {/* <button className="px-6 py-2.5 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors flex items-center gap-2">
                             <SlidersHorizontal size={18} />
                             Filter
-                        </button>
+                        </button> */}
                     </div>
                 </div>
 
@@ -162,9 +162,9 @@ export default function AssignedRecruiters() {
                                     <td className="py-4 px-6 text-sm text-gray-700">{job.assignedTo}</td>
                                     <td className="py-4 px-6">
                                         <div className="flex items-center gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300">
-                                            <button className="p-2 border border-blue-300 text-blue-600 rounded hover:bg-blue-50 transition-colors">
+                                            {/* <button className="p-2 border border-blue-300 text-blue-600 rounded hover:bg-blue-50 transition-colors">
                                                 <Eye size={16} />
-                                            </button>
+                                            </button> */}
                                             <button 
                                                 onClick={() => handleDelete(job.id)}
                                                 className="p-2 border border-red-300 text-red-600 rounded hover:bg-red-50 transition-colors"

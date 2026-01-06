@@ -94,10 +94,10 @@ export default function RecruiterDashboard() {
                         <h2 className="text-lg font-semibold text-gray-800">
                             Dashboard Overview
                         </h2>
-                        <button className="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-1.5 text-sm hover:bg-gray-100">
+                        {/* <button className="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-1.5 text-sm hover:bg-gray-100">
                             <Download size={16} />
                             Export
-                        </button>
+                        </button> */}
                     </div>
 
                     <div className="grid sm:grid-cols-3 gap-5">
@@ -202,7 +202,7 @@ export default function RecruiterDashboard() {
             <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div className="bg-white rounded-2xl shadow-[0px_0px_6px_0px_rgba(0,_0,_0,_0.35)] p-6">
                     <h2 className="text-lg font-semibold text-gray-800 mb-4">
-                        JD Comparison Chart
+                        JD Analytics
                     </h2>
                     <div className="h-48 flex items-end justify-center gap-12 bg-gradient-to-t from-gray-50 to-white rounded-lg p-4">
                         {/* Total JD Bar */}
@@ -364,9 +364,9 @@ export default function RecruiterDashboard() {
                                         </div>
                                     ))}
                                 </div>
-                                <p className="text-sm text-blue-600 font-medium cursor-pointer">
+                                {/* <p className="text-sm text-blue-600 font-medium cursor-pointer">
                                     View More Category →
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                     </div>
@@ -424,21 +424,21 @@ export default function RecruiterDashboard() {
                                 </>
                             )}
                         </div>
-                        {recentJobs.length > 0 && (
+                        {/* {recentJobs.length > 0 && (
                             <button className="text-blue-600 text-sm mt-4 font-medium text-center">
                                 View All Jobs →
                             </button>
-                        )}
+                        )} */}
                     </div>
                 </div>
 
                 <div className="bg-white rounded-2xl shadow-[0px_0px_6px_0px_rgba(0,_0,_0,_0.35)] mt-6 p-6">
                     <div className="flex justify-between items-center mb-4">
                         <h2 className="text-lg font-semibold">All Job Descriptions</h2>
-                        <button className="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-1.5 text-sm hover:bg-gray-100">
+                        {/* <button className="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-1.5 text-sm hover:bg-gray-100">
                             <Download size={16} />
                             Export
-                        </button>
+                        </button> */}
                     </div>
 
                     <div className="overflow-x-auto p-1">
@@ -454,7 +454,7 @@ export default function RecruiterDashboard() {
                                     <th className="px-3 py-2">Salary</th>
                                     <th className="px-3 py-2">Created By</th>
                                     <th className="px-3 py-2">Created Date</th>
-                                    <th className="px-3 py-2">Action</th>
+                                    {/* <th className="px-3 py-2">Action</th> */}
                                 </tr>
                             </thead>
 
@@ -487,7 +487,7 @@ export default function RecruiterDashboard() {
                                         <td className="px-3 py-3 whitespace-nowrap">
                                             {jd.createdAt ? new Date(jd.createdAt).toLocaleDateString() : 'N/A'}
                                         </td>
-                                        <td className="px-3 py-3">
+                                        {/* <td className="px-3 py-3">
                                             <div className="flex gap-2">
                                                 <div className="p-1 rounded-sm border border-blue-400">
                                                     <Eye size={16} className="text-blue-600 cursor-pointer" />
@@ -496,7 +496,7 @@ export default function RecruiterDashboard() {
                                                     <Trash2 size={16} className="text-red-500 cursor-pointer" />
                                                 </div>
                                             </div>
-                                        </td>
+                                        </td> */}
                                     </tr>
                                 )) : (
                                     <tr>
