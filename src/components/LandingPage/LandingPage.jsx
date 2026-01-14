@@ -170,16 +170,33 @@ const LandingPage = () => {
   ];
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    if (name === 'phoneNumber') {
+      // Allow only digits and limit to 10 characters
+      const numericValue = value.replace(/\D/g, '').slice(0, 10);
+      setFormData({
+        ...formData,
+        [name]: numericValue
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus({ type: '', message: '' });
+
+    // Validation
+    if (formData.phoneNumber.length !== 10) {
+      setSubmitStatus({ type: 'error', message: 'Phone number must be exactly 10 digits.' });
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       const response = await axios.post(`${superAdminBaseUrl}/api/enquiry/submit`, {
