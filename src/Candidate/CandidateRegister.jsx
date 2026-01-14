@@ -210,7 +210,7 @@ const CandidateRegister = () => {
                     {/* Resume Upload Section */}
                     <div className="mb-4">
                         <label className="block text-gray-800 font-medium mb-1">
-                            Resume <span className="text-gray-400 text-sm font-normal">(Optional)</span>
+                            Resume <span className="text-red-500 text-sm font-normal">*</span>
                         </label>
                         
                         {!resumeFile ? (
